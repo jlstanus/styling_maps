@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="32" height="32"
+     viewBox="0 0 32 32">
+
+  <!-- Support -->
+  <rect x="14.5" y="19" width="3" height="11"
+        rx="1"
+        fill="#333333"/>
+
+  <!-- Corolle / écran -->
+  <circle cx="16" cy="12"
+          r="9"
+          fill="#333333"/>
+
+  <!-- Corps du feu -->
+  <circle cx="16" cy="12"
+          r="6"
+          fill="#111111"
+          stroke="#ffffff"
+          stroke-width="1"/>
+
+  <!-- Optique -->
+  <circle cx="16" cy="12"
+          r="3.5"
+          fill="#ffcc00"/>
+</svg>

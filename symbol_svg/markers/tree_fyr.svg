@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 100"
+     width="100"
+     height="100">
+
+  <defs>
+    <!-- Étoile à 8 branches, volontairement large -->
+    <path id="star8"
+      d="
+        M 50 3
+        L 58 31
+        L 83 17
+        L 69 41
+        L 97 50
+        L 69 59
+        L 83 83
+        L 59 69
+        L 50 97
+        L 41 69
+        L 17 83
+        L 31 59
+        L 3 50
+        L 31 41
+        L 17 17
+        L 41 31
+        Z"/>
+  </defs>
+
+  <!-- Grandes branches basses -->
+  <use href="#star8"
+       transform="rotate(3 50 50)"
+       fill="#174f32"
+       opacity="0.65"/>
+
+  <!-- Quelques branches fines qui dépassent -->
+  <g stroke="#174f32"
+     stroke-width="0.9"
+     stroke-linecap="round"
+     opacity="0.60">
+    <line x1="50" y1="50" x2="96" y2="43"/>
+    <line x1="50" y1="50" x2="77" y2="90"/>
+    <line x1="50" y1="50" x2="11" y2="75"/>
+    <line x1="50" y1="50" x2="8" y2="35"/>
+  </g>
+
+  <!-- Couronne intermédiaire : forte différence de taille -->
+  <use href="#star8"
+       transform="translate(13 13) scale(0.74) rotate(25 50 50)"
+       fill="#176c39"
+       opacity="0.82"/>
+
+  <!-- Couronne supérieure -->
+  <use href="#star8"
+       transform="translate(26 26) scale(0.48) rotate(7 50 50)"
+       fill="#29964e"
+       opacity="0.92"/>
+
+  <!-- Cime -->
+  <use href="#star8"
+       transform="translate(37.5 37.5) scale(0.25) rotate(28 50 50)"
+       fill="#67c778"/>
+
+  <!-- Extrémité de la cime -->
+  <circle cx="50" cy="50"
+          r="2.3"
+          fill="#a5e3a6"/>
+
+</svg>
